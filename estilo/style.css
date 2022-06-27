@@ -20,6 +20,8 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    z-index: 10;
 }
 
 .perfil{
@@ -194,6 +196,8 @@ body{
     margin: 20px;
     text-align: center;
     padding: 10px;
+    position: relative;
+    z-index: 10;
 }
 
 .precos h2{
@@ -218,6 +222,8 @@ body{
 .formulario{
     background: #1D0229;
     padding: 50px;
+    position: relative;
+    z-index: 10;
 }
 
 .formularioDados{
@@ -292,6 +298,38 @@ textarea{
     border-radius: 10px;
     border: none;
     margin-top: 10px;
+}
+
+/*==================*/
+
+.bola{
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 133, 255, 0.53);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -95%;
+
+}
+
+.boladois{
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 133, 255, 0.53);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -25%;
+    right: 0;
+}
+
+.bolacentro{
+    width: 460px;
+    height: 460px;
+    background: rgba(0, 133, 255, 0.53);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -90%;
+    right: 32%;
 }
 
 @media(max-width: 600px){
