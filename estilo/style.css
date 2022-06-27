@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #F5F5F5;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    background-image: url(../arquivos/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.perfil{
+    background: #ffffff7c;
+    border: 1px solid #ffffff93;
+    backdrop-filter: blur(10px);
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.perfil h1{
+    color: #0A5270;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#seguir{
+    background: rgba(238, 238, 238, 0.28); 
+    border: 1px solid #ffffff74; 
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.557);
+    border-radius: 4px;
+    width: 250px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#textoperfil{
+    font-weight: 400;
+    font-size: 16px;
+    color: #0A5270;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#cont{
+    width: 316px;
+    height: 43px;
+    background: #0085FF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #E8E8ED;
+    border: 1px solid #0085FF;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.24);
+}
+
+.compt{
+    background: #ffffff7c;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff93;
+    border-radius: 10px;
+    margin-top: 2%;
+    /*width: 855px;*/
+    height: 190px;
+    padding: 10px;
+}
+
+.tTitulo{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+}
+
+#tTituloPro{
+    font-weight: 700;
+    font-size: 40px;
+    color: #0A5270;
+}
+
+.compt h3{
+    font-weight: 300;
+    font-size: 24px;
+    color: #0A5270;
+    margin-left: 10px;
+}
+
+.comptDois{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comptDois p{
+    background: #D9D9D9;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0A5270;
+    margin: 10px;
+    width: 137px;
+    height: 29px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px #0a51708d;
+}
+
+.sidebar{
+    /*background: hotpink;*/
+}
+
+.sidebar > div{
+   /* background: rgba(0, 0, 255, 0.182);*/
+    width: auto;
+    height: 240px;
+    margin: 10px;
+}
+
+#segundo{
+    background: #ffffff7c;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff93;
+    border-radius: 10px;
+    margin-top: 15%;
+    align-items: center;
+}
+#segundo img{
+    width: 142px;
+    height: 147px;
+    margin: 10px;
+}
+
+.terceiro{
+    display: flex;
+}
+
+.textos h2{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A5270;
+}
+
+.textos p{
+    font-weight: 300;
+    font-size: 20px;
+    color: #0A5270;
+    margin: 10px;
+   /* margin-top: 10px;*/
+}
+
+/*====== segunda seção ========*/
+.pre{
+    background: #F5F5F5;
+}
+
+#preTitulo{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 6%;
+    font-weight: 700;
+    font-size: 40px;
+    color: #0073B3;
+}
+
+.precos{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: #0A5270;
+}
+
+.precos > div{
+    flex: 1 0 300px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.262);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.precos h2{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.pre h3{
+    margin-top: 10%;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.precos p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media(max-width: 600px){
+   .flex{
+    grid-template-columns: 1fr;
+   }
+
+    .sidebar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar > div{
+        /* background: rgba(0, 0, 255, 0.182);*/
+         width: auto;
+         height: auto;
+         margin: 10px;
+     }
+
+     .comptDois{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     .comptDois p{
+        flex: 1 0 100px;
+     }
+     #tTituloPro{
+        text-align: center;
+     }
+     #segundo{
+        display: block;
+     }
+     .terceiro{
+        display: block;
+        text-align: center;
+        padding: 10px;
+     }
+
+}
