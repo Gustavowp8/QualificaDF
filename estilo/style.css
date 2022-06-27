@@ -41,6 +41,15 @@ body{
     font-size: 36px;
 }
 
+.perfil img{
+    transition: all .5s;
+    border: 10px solid transparent;
+}
+.perfil img:hover{
+    border: 10px solid #136497;
+    border-radius: 50%;
+}
+
 #seguir{
     background: rgba(238, 238, 238, 0.28); 
     border: 1px solid #ffffff74; 
